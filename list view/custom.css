@@ -1,0 +1,543 @@
+.offer-color{
+  color: #428B3C;
+}
+
+.popupCart{
+  position: fixed;
+ top: 100px;
+ 
+
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  animation: fadeInOut 3s forwards;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+
+
+
+
+
+
+.style-2-custom{
+background-color: var(--bg-white);
+      border-radius: var(--border-radius-xl);
+      padding: 0px;
+}
+
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+.shake {
+  animation: shake 0.5s;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #0D775E;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  z-index: 1000;
+}
+
+.popup.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* In your CSS file, e.g., styles.css */
+
+
+
+
+.small-number {
+  font-size: 0.8em;
+}
+
+
+
+
+
+
+.ratingStar{
+  color: #f8a500;
+}
+
+.powered-by {
+    position: fixed;
+    right: 0;
+    bottom: 90px;
+    left: 0;
+    z-index: 1030; }
+
+.fixed-bottom-custom{
+  position: fixed;
+    bottom: 48px;
+    z-index: 1; 
+    background-color: #f6f6f6;
+}
+
+.menu_name {
+   margin-left: 10px;
+   font-weight: 500;
+    font-size: 1rem; /* from .fs-sm */
+}
+
+.hotel-name{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.table-number{
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.gray-text{
+  color: #adb5bd;
+}
+
+.fs-12px{
+  font-size: 12px;
+}
+
+
+
+
+.font-poppins{
+  font-family: Poppins, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.custom-text-gray{
+  /* color:#adb5bd; */
+  color:#bbbaba;
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ .scrollable-section {
+  height: 200px; /* Set height */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideDown {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(100%);
+    }
+  }
+
+  .slide-up {
+    animation: slideUp 0.4s forwards;
+  }
+
+  .slide-down {
+    animation: slideDown 0.4s forwards;
+  }
+
+
+
+
+
+
+
+
+
+.small-offer-text {
+  font-size: 0.75rem; /* Adjust this to control the text size */
+  color: #438a3c;
+  font-weight: 600; /* Matches fw-semibold */
+}
+.dashed-line {
+  border-top: 1.9px dashed #0d775e; 
+  width: 100%; 
+}
+
+
+
+
+
+/* Container for the input field and icon */
+.input-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Icon styling */
+.input-container i {
+  position: absolute;
+  top: 50%;
+  left: 12px; /* Adjust the icon's distance from the left */
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #888; /* Icon color */
+}
+
+/* Padding on the input field to avoid overlap with the icon */
+.input-container .form-control {
+  padding-left: 45px; /* Increase padding to avoid overlap with the icon */
+  height: 50px; /* Adjust height for a better look */
+  border-radius: 8px; /* More subtle rounded corners */
+  border: 2px solid #ccc; /* Slightly thicker border */
+  background-color: #f9f9f9; /* Light background to match expected design */
+  box-shadow: none; /* Remove any default shadow */
+  font-size: 16px; /* Larger font size for input text */
+  color: #333; /* Darker text for input */
+}
+
+/* Adjust border and shadow on focus */
+.input-container .form-control:focus {
+  border-color: #888; /* Darker gray border on focus */
+  outline: none;
+}
+
+/* Label styling */
+.form-label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Validation errors */
+.input-container .form-control.is-invalid {
+  border-color: red;
+}
+
+/* Optional: Add a subtle shadow on hover for better user feedback */
+.input-container .form-control:hover {
+  border-color: #666;
+}
+
+/* Ensure the form-control class has vertical alignment */
+.input-container .form-control::placeholder {
+  color: #999; /* Placeholder color */
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Container for the input and icon */
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+/* Lock icon */
+.input-container i.ri-lock-line {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #888; /* Change color as needed */
+}
+
+/* Input field with padding to avoid overlap with icon */
+.input-container .form-control {
+  padding-left: 40px; /* Add padding to make space for the icon */
+}
+
+
+
+
+
+
+
+
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 80%;
+  max-width: 400px;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px; /* Adds space below the circle */
+}
+
+.popup-gif {
+  width: 80px;  /* Adjust size as needed */
+  height: 80px;
+  border-radius: 50%;
+}
+
+.popup-content h4 {
+  font-size: 1.25rem;
+  margin-top: 20px;
+}
+
+.popup-content p {
+  font-size: 1rem;
+  color: #555;
+}
+
+
+
+
+
+
+
+
+
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 80%;
+  max-width: 400px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.custom-offcanvas {
+  position: fixed; /* or absolute */
+  top: 0; /* Adjust as needed */
+  bottom: 0; /* Adjust as needed */
+  left: 0; /* Adjust as needed */
+  right: 0; /* Adjust as needed */
+  z-index: 1050; /* Ensure it's above other elements */
+  overflow-y: auto; /* Allow scrolling if content overflows */
+  background-color: white; /* Ensure background is set */
+  transition: transform 0.3s ease; /* Optional: for smooth opening/closing */
+}
+
+.custom-offcanvas.show {
+  transform: translateY(0); /* Show the offcanvas */
+}
+
+.custom-offcanvas.hide {
+  transform: translateY(100%); /* Hide the offcanvas */
+}
+
+/* Dotted border */
+hr.dotted {
+  border-top:  2.5px dotted #0d775e;
+   padding-top: 0.5px;
+  padding-bottom: 0.5px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+hr.dashed {
+  border-top: 2.5px dashed #0d775e;
+  padding-top: 0.5px;
+  padding-bottom: 0.5px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.custom-container {
+  padding-bottom: 0px; /* This will override Bootstrap's padding-bottom */
+}
+
+.price-wrapper .current-price {
+    color: #4E74FC;
+    font-size: 18px;
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+
+  .cart-list .dz-meta li {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px; }
+
+  .dz-card .dz-meta li {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px; }      
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.popup-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.popup-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.footer-fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 1000;
+  padding: 10px 0;
+}
